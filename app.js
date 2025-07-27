@@ -27,3 +27,14 @@ function llenarHTML(amigos){
     });
 }
 
+function sortearAmigo() {
+    if (amigos.length < 2){
+        alert("Por favor, ingrese al menos dos amigos para sortear.");
+        return;
+    }
+    numeroAleatorio = Math.floor(Math.random()*amigos.length);
+
+    listaAmigos.innerHTML = "";
+    resultadoSorteo.textContent = `El amigo es ${amigos[numeroAleatorio]}`;
+    amigos = [];
+}
