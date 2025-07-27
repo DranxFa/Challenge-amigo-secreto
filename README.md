@@ -46,7 +46,7 @@ Este desafío forma parte del programa **Oracle Next Education (ONE)**.
 ## 🌐 Demo en Línea
 
 Haz clic aquí para ver el proyecto funcionando:  
-🔗 [Jugar Amigo Secreto](https://dranxfa.github.io/nombre-del-repo/)
+🔗 [Jugar Amigo Secreto](https://dranxfa.github.io/Challenge-amigo-secreto/)
 
 ---
 
