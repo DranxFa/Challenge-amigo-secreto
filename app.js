@@ -12,14 +12,23 @@ function agregarAmigo() {
     amigos.push(nombres);
     llenarHTML(amigos);
     limpiarCaja();
+    limpiarResultado();
 }
 
 function limpiarCaja(){
     document.getElementById("amigo").value = "";
 }
 
-function llenarHTML(amigos){
+function limpiarResultado(){
+    resultadoSorteo.innerHTML = "";
+}
+
+function limpiarLista(){
     listaAmigos.innerHTML = "";
+}
+
+function llenarHTML(amigos){
+    limpiarLista();
     amigos.forEach(amigo => {        
         let lista = document.createElement('li');
         lista.textContent = amigo;
@@ -34,7 +43,7 @@ function sortearAmigo() {
     }
     numeroAleatorio = Math.floor(Math.random()*amigos.length);
 
-    listaAmigos.innerHTML = "";
+    limpiarLista();
     resultadoSorteo.textContent = `El amigo es ${amigos[numeroAleatorio]}`;
     amigos = [];
 }
